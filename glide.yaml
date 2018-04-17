@@ -1,0 +1,5 @@
+pakage: github/nightfury1204
+import:
+- pakage: github.com/hashicorp/vault/api
+  vcs: git
+  version: v0.10.0
