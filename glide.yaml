@@ -1,5 +1,15 @@
-pakage: github/nightfury1204
+package: github.com/nightfury1204/vault-prac
 import:
-- pakage: github.com/hashicorp/vault/api
-  vcs: git
-  version: v0.10.0
+- package: github.com/bmizerany/pat
+- package: github.com/golang/glog
+- package: github.com/hashicorp/vault
+  subpackages:
+  - api
+- package: github.com/pkg/errors
+- package: github.com/spf13/cobra
+  version: master
+- package: github.com/spf13/pflag
+  version: master
+- package: k8s.io/client-go
+  subpackages:
+  - util/cert

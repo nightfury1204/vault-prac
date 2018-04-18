@@ -1,6 +1,10 @@
-hash: bdf5c0b43903ad8f1246f2cdfe547d87d5dcc3a4055c326109e5a2a40514e3e3
-updated: 2018-04-13T17:12:23.361182384+06:00
+hash: 667e828ab4f2d366bf0704436d3994fd44f8a96af51e7034d969860f8f443116
+updated: 2018-04-17T18:19:28.732067694+06:00
 imports:
+- name: github.com/bmizerany/pat
+  version: 6226ea591a40176dd3ff9cd8eff81ed6ca721a00
+- name: github.com/golang/glog
+  version: 44145f04b68cf362d9c4df2182967c2275eaefed
 - name: github.com/golang/snappy
   version: 553a641470496b2327abcac10b36396bd98e45c9
 - name: github.com/hashicorp/errwrap
@@ -23,21 +27,29 @@ imports:
   - json/scanner
   - json/token
 - name: github.com/hashicorp/vault
-  version: fce704efa2c80a47f92cf7652fac8d94d661830a
+  version: 54fdaa8c825f766e71a34eeebd581319f9194694
   subpackages:
   - api
   - helper/compressutil
   - helper/jsonutil
   - helper/parseutil
   - helper/strutil
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
 - name: github.com/mitchellh/go-homedir
   version: b8bc1bf767474819792c23f32d8286a45736f1c6
 - name: github.com/mitchellh/mapstructure
   version: 00c29f56e2386353d58c599509e8dc3801b0d716
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/ryanuber/go-glob
   version: 256dc444b735e061061cf46c809487313d5b0065
 - name: github.com/sethgrid/pester
   version: ed9870dad3170c0b25ab9b11830cc57c3a7798fb
+- name: github.com/spf13/cobra
+  version: 615425954c3b0d9485a7027d4d451fdcdfdee84e
+- name: github.com/spf13/pflag
+  version: 583c0c0531f06d5278b7d917446061adc344b5cd
 - name: golang.org/x/net
   version: 1c05540f6879653db88113bc4a2b70aec4bd491f
   subpackages:
@@ -48,8 +60,19 @@ imports:
 - name: golang.org/x/text
   version: b19bf474d317b857955b12035d2c5acb57ce8b01
   subpackages:
+  - cases
+  - internal
+  - internal/tag
+  - language
+  - runes
   - secure/bidirule
+  - secure/precis
   - transform
   - unicode/bidi
   - unicode/norm
+  - width
+- name: k8s.io/client-go
+  version: 78700dec6369ba22221b72770783300f143df150
+  subpackages:
+  - util/cert
 testImports: []
