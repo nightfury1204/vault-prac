@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-gofmt -s -w *.go pkg commands
+goimports -w *.go pkg commands
 
 gofmt -s -w *.go pkg commands

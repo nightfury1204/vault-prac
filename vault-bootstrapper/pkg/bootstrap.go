@@ -132,11 +132,13 @@ func (o *Options) Bootstrap() error {
 		return errors.Wrap(err, "unable to create token for cert issuer")
 	}
 
-	fmt.Println("--------------------------------")
-	fmt.Println("Cert Issuer token")
+	glog.Infoln("--------------------------------")
+	glog.Infoln("Cert Issuer token")
 	value, _ := json.MarshalIndent(secret, "", "  ")
-	fmt.Println(string(value))
-	fmt.Println("--------------------------------")
+	glog.Infoln(string(value))
+	glog.Infoln("--------------------------------")
+
+	fmt.Println("Token for cert-issuer : "+secret.Auth.ClientToken)
 
 	return nil
 }

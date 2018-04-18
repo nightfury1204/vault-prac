@@ -1,5 +1,6 @@
 # senerio 1
-Issue client crt/key
+- Issue client crt/key
+
 ```
 cert-issuer
 
@@ -17,7 +18,7 @@ Flags:
 
 Request url:
 ```
-127.0.0.1:10088/issue/cert?org=foo&cn=bar 
+http://127.0.0.1:10088/issue/cert?org=foo&cn=bar 
 ```
 
 Response Format:
