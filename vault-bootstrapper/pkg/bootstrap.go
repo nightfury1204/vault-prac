@@ -73,8 +73,7 @@ func (o *Options) Bootstrap() error {
 	glog.Infoln("---------------------------------------------")
 
 	// if vault is sealed then unseal it
-	// if vault is in dev mode then ignor it
-	if !o.IsDev && status.Sealed {
+	if status.Sealed {
 		if status.T > len(o.UnSealKeys) {
 			return errors.Errorf("insufficient number of unseal keys. %d keys required", status.T)
 		}
